@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 docker build -t olegpochanskiy/multi-client:latest -t olegpochanskiy/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t olegpochanskiy/multi-server:latest -t olegpochanskiy/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t olegpochanskiy/multi-worker:latest -t olegpochanskiy/multi-worker:$SHA -f ./worker/Dockerfile ./worker/
+docker build -t olegpochanskiy/multi-worker:latest -t olegpochanskiy/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push olegpochanskiy/multi-client:latest
 docker push olegpochanskiy/multi-server:latest
